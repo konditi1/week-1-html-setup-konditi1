@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <h1>Expense Tracker</h1>
+    <p>Expense Tracker is a web application that helps you keep track of your expenses.</p>
+    <h3>Register</h3>
+    <form action="/register" method="POST">
+        <label for="name"><b>Name:</b></label>
+        <input type="text" placeholder="Enter Name" name="name" required>
+        <br>
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="Enter Email" name="email" required>
+        <br>
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required>
+        <br>
+        <label for="confirm-password"><b>Confirm Password:</b></label>
+        <input type="password" placeholder="Confirm Password" name="confirm-password" required>
+        <br>
+        <button type="submit">Register</button>
+    </form>
+    <br>
+    <h3>Login</h3>
+    <form action="/login" method="POST">
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="Enter Email" name="email" required>
+        <br>
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required>
+        <br>
+        <button type="submit">Login</button>
+    </form>
+    <p>Already have an account? <a href="/login">Login</a></p>
+
+    <h2>User Information Table</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Fena Olwal</td>
+            <td>fena.olwal@example.com</td>
+            <td>+254-723-4567</td>
+        </tr>
+        <tr>
+            <td>James Otieno</td>
+            <td>james.otieno@example.com</td>
+            <td>+254-789-1234</td>
+        </tr>
+        <tr>
+            <td>Mary Manyasi</td>
+            <td>mary.manyasi@example.com</td>
+            <td>+254-756-7890</td>
+        </tr>
+    </tbody>
+</table>
+
+<footer>
+    <p>&copy; 2024 Expense Tracker. All rights reserved. <a href = "https://github.com/olwal-fena">Fena Olwal</a></p>
+    <img src="images/control-of-purple-nutsedge-in-maize-kenya-2.jpg" alt="a photo of a weed" width="200">
+</footer>
+</body>
+</html>
